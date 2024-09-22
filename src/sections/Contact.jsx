@@ -19,9 +19,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    // service_qf77cco
-    // template_womha4j
-    // 5FvW7DepRnLodDiWd
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
