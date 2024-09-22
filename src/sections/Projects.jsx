@@ -33,7 +33,7 @@ const Projects = () => {
   const currentProject = myProjects[selectedProjectIndex];
 
   return (
-    <section className="c-space my-20 mt-80">
+    <section className="c-space my-20 mt-56">
       <p className="head-text">My Selected Work</p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
@@ -75,7 +75,7 @@ const Projects = () => {
               ))}
             </div>
 
-            <a
+            {/* <a
               className="flex items-center gap-2 cursor-pointer text-white-600"
               href={currentProject.href}
               target="_blank"
@@ -83,7 +83,7 @@ const Projects = () => {
             >
               <p>Check Live Site</p>
               <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
-            </a>
+            </a> */}
           </div>
 
           <div className="flex justify-between items-center mt-7">

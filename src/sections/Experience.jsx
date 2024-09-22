@@ -1,16 +1,18 @@
-import { Suspense, useState } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import Developer from "../components/Developer.jsx";
-import CanvasLoader from "../components/CanvasLoader.jsx";
-import { workExperiences } from "../constants/index.js";
+import { Suspense, useState } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
+import Developer from '../components/Developer.jsx';
+import CanvasLoader from '../components/CanvasLoader.jsx';
+import { workExperiences } from '../constants/index.js';
 
-const Experience = () => {
-  const [animationName, setAnimationName] = useState("idle");
+const WorkExperience = () => {
+  const [animationName, setAnimationName] = useState('idle');
+
   return (
     <section className="c-space my-20" id="work">
       <div className="w-full text-white-600">
         <p className="head-text">My Work Experience</p>
+
         <div className="work-container">
           <div className="work-canvas">
             <Canvas>
@@ -20,11 +22,7 @@ const Experience = () => {
               <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
 
               <Suspense fallback={<CanvasLoader />}>
-                <Developer
-                  position-y={-3}
-                  scale={3}
-                  animationName={animationName}
-                />
+                <Developer position-y={-3} scale={3} animationName={animationName} />
               </Suspense>
             </Canvas>
           </div>
@@ -63,4 +61,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default WorkExperience;

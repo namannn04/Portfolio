@@ -132,9 +132,7 @@ const About = () => {
             <h2 className="text-2xl font-bold mb-4 text-green-500">
               Languages
             </h2>
-            <div className="grid grid-cols-7 gap-4 mb-8">
-              {" "}
-              {/* Adjust the number of columns */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4 mb-8">
               {languages.map((lang) => (
                 <IconWithHover
                   key={lang.name}
@@ -148,9 +146,7 @@ const About = () => {
             <h2 className="text-2xl font-bold mb-4 text-green-500">
               Libraries and Frameworks
             </h2>
-            <div className="grid grid-cols-8 gap-4 mb-8 ">
-              {" "}
-              {/* Adjust the number of columns */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8 gap-4 mb-8">
               {frameworks.map((framework) => (
                 <IconWithHover
                   key={framework.name}
@@ -164,9 +160,7 @@ const About = () => {
             <h2 className="text-2xl font-bold mb-4 text-green-500">
               Databases
             </h2>
-            <div className="grid grid-cols-2 gap-4 mb-8">
-              {" "}
-              {/* Adjust based on the number of databases */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-8">
               {databases.map((db) => (
                 <IconWithHover key={db.name} name={db.name} img={db.img} />
               ))}
