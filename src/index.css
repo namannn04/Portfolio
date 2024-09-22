@@ -11,6 +11,12 @@
 body {
   background: #010103;
   font-family: 'General Sans', sans-serif;
+  overflow-y: scroll;
+}
+
+
+body::-webkit-scrollbar {
+  display: none; 
 }
 
 @layer utilities {
