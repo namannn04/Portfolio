@@ -26,6 +26,16 @@ export default {
       backgroundImage: {
         terminal: "url('/assets/terminal.png')",
       },
+      keyframes: {
+        fadeInOut: {
+          '0%': { opacity: '0', transform: 'scale(0.9)' },
+          '50%': { opacity: '1', transform: 'scale(1)' },
+          '100%': { opacity: '0', transform: 'scale(0.9)' },
+        },
+      },
+      animation: {
+        fadeInOut: 'fadeInOut 1s ease-in-out', // 1s duration for fade effect
+      },
     },
   },
   plugins: [],
