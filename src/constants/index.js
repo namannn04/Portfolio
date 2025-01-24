@@ -253,6 +253,16 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
+    name: "Code Kshetra 2.0",
+    pos: "Web Developer",
+    duration: "2024-2025",
+    title:
+      "I had the privilege of participating in a prestigious national-level hackathon organized by Geek Room (MSIT). During the event, I worked on a website using React.js, which proved to be an incredible learning experience. Collaborating with a talented team and overcoming challenges together made this journey truly unforgettable.",
+    icon: "/assets/ck2.0.png",
+    animation: "clapping",
+  },
+  {
+    id: 2,
     name: "Code Cubicle 3.0",
     pos: "Full Stack Web Developer",
     duration: "2024",
@@ -261,23 +271,14 @@ export const workExperiences = [
     icon: "/assets/codeCubicle.jpg",
     animation: "victory",
   },
-  {
-    id: 2,
-    name: "CodSoft",
-    pos: "Front End Developer",
-    duration: "2024",
-    title:
-      "It was a one-month internship where I worked as a frontend developer. During this time, I focused on basic requirements, as it was my early stage in learning full-stack web development. This experience helped me build a solid foundation and gain valuable insights into the development process.",
-    icon: "/assets/codsoft.png",
-    animation: "clapping",
-  },
+  
   // {
   //   id: 3,
-  //   name: "Notion",
-  //   pos: "Junior Web Developer",
-  //   duration: "2019 - 2020",
+  //   name: "Code Kshetra 2.0",
+  //   pos: "Web Developer",
+  //   duration: "2024-2025",
   //   title:
-  //     "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
+  //     "I had the privilege of participating in a prestigious national-level hackathon organized by Geek Room (MSIT). During the event, I worked on a website using React.js, which proved to be an incredible learning experience. Collaborating with a talented team and overcoming challenges together made this journey truly unforgettable.",
   //   icon: "/assets/notion.svg",
   //   animation: "salute",
   // },
